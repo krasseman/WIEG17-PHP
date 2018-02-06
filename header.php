@@ -1,7 +1,26 @@
 <html>
     <head>
-        <title><?php echo $pageName ?></title>
+       <?php 
+       define("namn", "Filmtips.com");
+
+       ?>
+        <title>
+        
+        <?php echo constant("namn");
+           if (isset($pageName)) {
+
+            echo " - $pageName ";
+            
+        }
+        
+        ?>
+        
+        </title>
+      <?php 
       
+     
+      
+      ?>
         <style>
             body {
                 background-color: black;
